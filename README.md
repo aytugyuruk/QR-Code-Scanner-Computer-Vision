@@ -15,7 +15,7 @@ Bu proje, OpenCV kullanarak bir görüntüdeki QR kodlarını tespit eder ve ç�
 1. `image.jpg` adlı bir resim dosyasını proje klasörüne koyun.
 2. Aşağıdaki kodu çalıştırın:
    ```bash
-   python qr_scanner.py
+   python barcode_dedector_on_image.py
    ```
 3. Program, QR kodun etrafına kırmızı kutu çizer ve terminalde QR kod verisini gösterir.
 
