@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread("barcode.jpg")
+image = cv2.imread("input.png")
 detector = cv2.QRCodeDetector()
 
 data, bbox, _ = detector.detectAndDecode(image)
@@ -13,11 +13,12 @@ if bbox is not None:
                  (0, 0, 255), 5)
     if data:
         cv2.putText(image, data, (bbox[0][0][0], bbox[0][0][1] - 10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255), 3)
+                    cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
         print(f"QR Kod Verisi: {data}")
 else:
     print("QR kod bulunamadı.")
 
 cv2.imshow("QR Scanner", image)
+cv2.imwrite("output.png", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
