@@ -1,5 +1,7 @@
-<img src="input.png" alt="Input" width="300"/>  
-<img src="output.png" alt="Output" width="300"/>
+<div style="display: flex; gap: 20px;">
+  <img src="input.png" alt="Input" width="300"/>
+  <img src="output.png" alt="Output" width="300"/>
+</div>
 
 # QR Kod Tespit Projesi
 
